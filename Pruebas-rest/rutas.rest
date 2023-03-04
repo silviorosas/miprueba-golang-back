@@ -1,0 +1,21 @@
+@HOST=http://localhost:3000/
+@DATABASE=test
+
+### Ruta de miprueba el 1er miPrueba refiere a la ruta en routerPrincipal.go el 2do miPueba está en routes.go
+GET {{HOST}}persona/api/all HTTP/1.1
+Content-Type: application/json
+Database: {{DATABASE}}
+
+
+
+### Ruta de alta tablanew CREAR usuario. Ruta está en acciones
+POST {{HOST}}persona/api/save HTTP/1.1
+Content-Type: application/json
+Database: {{DATABASE}}
+
+{
+  "nombre": "Lola",
+  "apellido": "Palooza",
+  "direccion":"Baires 9856",
+  "telefono":"1234438"
+}
